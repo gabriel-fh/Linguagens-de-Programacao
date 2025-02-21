@@ -3,11 +3,11 @@
 # verificar e informar se os valores formam um triângulo válido (a soma de dois lados deve ser
 # sempre maior que o terceiro).
 
-lados = []
-for i in range(3):
-    lados.append(float(input(f"Digite o {i+1}º lado: ")))
+a = float(input("Digite o 1º lado: "))
+b = float(input("Digite o 2º lado: "))
+c = float(input("Digite o 3º lado: "))
 
-if lados[0] + lados[1] > lados[2] and lados[0] + lados[2] > lados[1] and lados[1] + lados[2] > lados[0]:
-    print("Os lados formam um triângulo válido.")
+if a + b > c and a + c > b and b + c > a:
+  print("Os lados formam um triângulo válido.")
 else:
-    print("Os lados não formam um triângulo válido.")
+  print("Os lados não formam um triângulo válido.")
