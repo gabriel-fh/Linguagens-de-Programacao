@@ -1,2 +1,2 @@
-# Linguagens-de-Programa-o
+# Linguagens-de-Programacao
 Exercícios da disciplina
