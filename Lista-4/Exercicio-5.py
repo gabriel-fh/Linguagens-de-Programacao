@@ -1,10 +1,11 @@
-# 5. Conversão de Temperatura
-# Crie uma função que converta temperaturas de Celsius para Fahrenheit. No
-# programa principal, solicite uma temperatura ao usuário em graus Celsius e utilize
-# a função para exibir o valor correspondente em Fahrenheit.
+# 5. Contar Ocorrências de um Elemento
+# Escreva um programa que peça ao usuário para inserir uma lista de números e um
+# número específico. O programa deve contar quantas vezes esse número aparece
+# na lista.
 
-def celsius_para_fahrenheit(celsius):
-    return celsius * 9/5 + 32
+def contar(lista, n):
+    return lista.count(n)
 
-celsius = float(input("Digite a temperatura em graus Celsius: "))
-print(f"{celsius_para_fahrenheit(celsius):.2f}°F")
+lista = list(map(int, input("Digite os números inteiros separados por espaço: ").split()))
+n = int(input("Digite o número que deseja contar: "))
+print(contar(lista, n))

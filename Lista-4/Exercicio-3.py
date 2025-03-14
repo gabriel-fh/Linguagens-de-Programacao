@@ -1,10 +1,9 @@
-# 3. Cálculo da Média de uma Lista
-# Crie uma função que receba uma lista de números e retorne a média dos valores.
-# No programa principal, peça ao usuário para inserir os números e exiba a média
-# utilizando a função criada.
+# 3. Remover Duplicatas
+# Escreva um programa que leia uma lista de números e remova os valores
+# duplicados, mantendo a ordem original.
 
-def media(lista):
-    return sum(lista) / len(lista)
+def remove_duplicatas(lista):
+    return list(dict.fromkeys(lista))
 
-lista = list(map(float, input("Digite os números separados por espaço: ").split()))
-print(f"{media(lista):.2f}")
+lista = list(map(int, input("Digite os números inteiros separados por espaço: ").split()))
+print(remove_duplicatas(lista))

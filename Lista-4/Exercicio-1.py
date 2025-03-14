@@ -1,15 +1,9 @@
-# 1. Cálculo do Fatorial
-# Crie uma função que receba um número inteiro como parâmetro e retorne o seu
-# fatorial. Em seguida, utilize essa função em um programa principal para calcular o
-# fatorial de um número informado pelo usuário.
+# 1. Soma dos Elementos de uma Lista
+# Escreva um programa que solicite ao usuário uma lista de números inteiros e
+# calcule a soma de todos os elementos da lista.
 
+def soma(lista):
+    return sum(lista)
 
-def fatorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * fatorial(n - 1)
-
-
-n = int(input("Digite um número inteiro: "))
-print(fatorial(n))
+lista = list(map(int, input("Digite os números inteiros separados por espaço: ").split()))
+print(soma(lista))

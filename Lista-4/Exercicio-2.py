@@ -1,15 +1,10 @@
-# 2. Verificação de Número Primo
-# Crie uma função que receba um número inteiro e retorne True se for primo e False
-# caso contrário. No programa principal, solicite um número ao usuário e utilize a
-# função para verificar se ele é primo.
+# 2. Encontrar o Maior e o Menor Número
+# Escreva um programa que leia uma lista de números digitados pelo usuário e
+# determine o maior e o menor número presentes na lista.
 
-def primo(n):
-    if n <= 1:
-        return False
-    for i in range(2, n):
-        if n % i == 0:
-            return False 
-    return True
+def maior_menor(lista):
+    return max(lista), min(lista)
 
-n = int(input("Digite um número inteiro: "))
-print(primo(n))
+lista = list(map(int, input("Digite os números inteiros separados por espaço: ").split()))
+maior, menor = maior_menor(lista)
+print(f"Menor: {menor}\Maior: {maior}")
